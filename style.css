@@ -96,15 +96,67 @@ button {
 
 .content, .content-sidebar {
     display: inline-grid;
-    grid-template: 1fr / 3fr 1fr;
     background-color: #e6e6e6c1;
-    padding: 15px;
+    padding: 10px;
 }
 
-.content div {
-    padding: 10px;
+.content {
+    grid-template: 30px 15fr / 1fr;
+    padding: 5px;
+}
+
+.content-post{
+    display: inline-grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+    padding: 15px;
+    gap: 20px;
+}
+
+.posts {
+    display: inline-grid;
+    grid-template-rows: 1fr 25px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #888;
+    background: linear-gradient(
+    to right,
+    orange 2%,
+    white  3%,
+    white  100%
+  );
+}
+
+.posts p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.post-btn {
+    text-align: right;
+}
+
+.post-btn img {
+    max-width: 23px;
+}
+
+.title {
+    font-weight: bold;
 }
 
 .content-sidebar {
     grid-column: 3 / 4;
+}
+
+.announcement, .trending {
+    display: inline-grid;
+    grid-template-rows: 30px 8fr;
+}
+
+.announce-content, .trend-content {
+    display: inline-grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #888;
 }
