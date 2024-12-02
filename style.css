@@ -36,14 +36,14 @@ img {
 }
 
 ul {
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 li {
     display: flex;
     list-style-type: none;
     cursor: pointer;
-    padding: 10px;
+    padding: 5px;
 }
 
 li:hover {
@@ -92,6 +92,27 @@ button {
     width: 70px;
     padding: 5px 0;
     margin-right: 10px;
+}
+
+.user-greeting, .notification, .user-notif {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-notif, .user-greeting {
+    width: auto;
+}
+
+.user-notif img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.user-greeting img {
+    border-radius: 50%;
+    height: 100px;
 }
 
 .content, .content-sidebar {
@@ -149,14 +170,50 @@ button {
 
 .announcement, .trending {
     display: inline-grid;
-    grid-template-rows: 30px 8fr;
+    grid-template-rows: 30px 2fr;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .announce-content, .trend-content {
     display: inline-grid;
-    grid-template-rows: repeat(auto-fill, 1fr);
-    padding: 5px;
+    grid-template-rows: repeat(auto-fill, 65px);
     background-color: white;
     border-radius: 10px;
     box-shadow: 3px 3px 3px #888;
+}
+
+.announce-content {
+    gap: 20px;
+    padding: 20px;
+    height: 230px;
+}
+
+.announce p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.trend-content {
+    padding: 0 20px;
+    height: 250px;
+    gap: 0;
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    gap: 0 15px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.trend img {
+    border-radius: 50%;
+    height: 40px;
 }
