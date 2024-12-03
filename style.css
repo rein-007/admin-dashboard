@@ -64,7 +64,7 @@ li:hover {
     display: flex;
 }
 
-.header img {
+.icon-img {
     max-width: 22px;
     margin-left: 50px;
 }
@@ -105,14 +105,18 @@ button {
     width: auto;
 }
 
-.user-notif img {
+.icon-small {
     border-radius: 50%;
-    height: 50px;
+    height: 40px;
 }
 
-.user-greeting img {
+.icon-big {
     border-radius: 50%;
-    height: 100px;
+    height: 70px;
+}
+
+.greet {
+    font-size: 11px;
 }
 
 .content, .content-sidebar {
